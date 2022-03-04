@@ -1,0 +1,8 @@
+<div class="list-container">
+  <div class="list-wrapper">
+    <a *ngFor="let movie of movies; let i = index" class="box" routerLink="/movies/{{movie._id}}" >
+      <img src="{{movie.image}}" alt="image" class="movie-image" />
+      <span class="movie-name">{{movie.name}}</span>
+    </a>
+  </div>
+</div>
